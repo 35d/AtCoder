@@ -2,9 +2,12 @@
 # https://atcoder.jp/contests/abs/tasks/practice_1
 
 # 整数の入力
-a = int(input())
+N = int(input())
+
 # スペース区切りの整数の入力
-b, c = map(int, input().split())
+list = map(int, input().split())
+
+count = 0
 
 # 文字列の入力
 s = input()
