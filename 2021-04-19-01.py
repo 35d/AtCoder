@@ -13,17 +13,12 @@ flg = True
 count = 0
 
 while len(D) > 0:
-    print(D)
-    print(len(D))
     max_num = max(D)  # 直径の最大値を代入
 
-    # 数値が D 以上のものをすべて pop する
-    for i in range(len(D)):
-        print(i)
-        print('D[i]:', D[i])
-        if D[i] >= max_num:
-            D.pop(i)
+    while D.count(max_num) != 0:
+        index = D.index(max_num)
+        D.pop(index)
 
-    count += count
+    count = count + 1
 
 print(count)
